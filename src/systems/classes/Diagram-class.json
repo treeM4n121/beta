@@ -1,0 +1,50 @@
+{
+  "name": "Diagram-class",
+  "master": false,
+  "version": "0.0.1",
+  "description": "",
+  "schemas": {
+    "v123b51abbb18712": {
+      "_id": "v123b51abbb18712",
+      "_name": "Diagram",
+      "_inherit": ["_Component"],
+      "data": "property",
+      "ref": "property",
+      "zoom": "property",
+      "render": "method"
+    }
+  },
+  "models": {
+    "b169321637f19101": {
+      "_id": "b169321637f19101",
+      "_name": "Diagram",
+      "_description": "",
+      "ref": {
+        "description": "",
+        "type": "any",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "zoom": {
+        "description": "",
+        "type": "number",
+        "readOnly": false,
+        "mandatory": false,
+        "default": 1
+      },
+      "render": { "description": "", "params": [], "result": "any" },
+      "data": {
+        "description": "",
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      }
+    }
+  },
+  "behaviors": {},
+  "types": {},
+  "components": { "Diagram": {} },
+  "_id": "n15bc813449110aa"
+}

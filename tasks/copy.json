@@ -1,0 +1,130 @@
+{
+  "web-folder": {
+    "expand": true,
+    "cwd": "src/www",
+    "src": [
+      "**"
+    ],
+    "dest": "dist"
+  },
+  "libraries": {
+    "files": [
+      {
+        "src": "node_modules/system-runtime/dist/system-runtime.min.js",
+        "dest": "dist/lib/system-runtime/system-runtime.min.js"
+      },
+      {
+        "expand": true,
+        "cwd": "node_modules/bootstrap/dist/css",
+        "src": [
+          "*"
+        ],
+        "dest": "dist/lib/bootstrap/dist/css"
+      },
+      {
+        "expand": true,
+        "cwd": "node_modules/bootstrap/dist/fonts",
+        "src": [
+          "*"
+        ],
+        "dest": "dist/lib/bootstrap/dist/fonts"
+      },
+      {
+        "src": "node_modules/prismjs/themes/prism.css",
+        "dest": "dist/lib/prism/prism.css"
+      }
+    ]
+  },
+  "ace": {
+    "files": [
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/ace.js",
+        "dest": "dist/lib/ace/ace.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/ext-language_tools.js",
+        "dest": "dist/lib/ace/ext-language_tools.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/ext-searchbox.js",
+        "dest": "dist/lib/ace/ext-searchbox.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/mode-css.js",
+        "dest": "dist/lib/ace/mode-css.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/mode-html.js",
+        "dest": "dist/lib/ace/mode-html.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/mode-javascript.js",
+        "dest": "dist/lib/ace/mode-javascript.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/mode-json.js",
+        "dest": "dist/lib/ace/mode-json.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/mode-text.js",
+        "dest": "dist/lib/ace/mode-text.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/worker-css.js",
+        "dest": "dist/lib/ace/worker-css.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/worker-html.js",
+        "dest": "dist/lib/ace/worker-html.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/worker-javascript.js",
+        "dest": "dist/lib/ace/worker-javascript.js"
+      },
+      {
+        "src": "node_modules/ace-builds/src-min-noconflict/worker-json.js",
+        "dest": "dist/lib/ace/worker-json.js"
+      }
+    ]
+  },
+  "codemirror": {
+    "files": [
+      {
+        "src": "node_modules/codemirror/lib/codemirror.css",
+        "dest": "dist/lib/codemirror/codemirror.css"
+      },
+      {
+        "src": "node_modules/codemirror/addon/hint/show-hint.css",
+        "dest": "dist/lib/codemirror/addon/hint/show-hint.css"
+      },
+      {
+        "src": "node_modules/codemirror/theme/eclipse.css",
+        "dest": "dist/lib/codemirror/theme/eclipse.css"
+      }
+    ]
+  },
+  "web-files": {
+    "expand": true,
+    "cwd": "src/merges/web",
+    "src": [
+      "**"
+    ],
+    "dest": "dist"
+  },
+  "cordova-files": {
+    "expand": true,
+    "cwd": "src/merges/cordova",
+    "src": [
+      "**"
+    ],
+    "dest": "dist"
+  },
+  "electron-files": {
+    "expand": true,
+    "cwd": "src/merges/electron",
+    "src": [
+      "**"
+    ],
+    "dest": "dist"
+  }
+}

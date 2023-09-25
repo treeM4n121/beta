@@ -1,0 +1,125 @@
+{
+  "name": "State-class",
+  "master": false,
+  "version": "1.0.0",
+  "description": "",
+  "schemas": {
+    "y1efb3178341398a": {
+      "_name": "State",
+      "_inherit": ["_Component"],
+      "type": "property",
+      "component": "property",
+      "lastPage": "property",
+      "messages": "property",
+      "menu": "property",
+      "previousMenu": "property",
+      "space": "property",
+      "navigation": "property",
+      "logs": "collection",
+      "_id": "y1efb3178341398a"
+    }
+  },
+  "models": {
+    "j18ad71fd8c1c175": {
+      "_name": "State",
+      "type": {
+        "type": "editorType",
+        "readOnly": false,
+        "mandatory": false,
+        "default": "designer"
+      },
+      "component": {
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "_id": "j18ad71fd8c1c175",
+      "lastPage": {
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": "index.html"
+      },
+      "messages": {
+        "type": "array",
+        "readOnly": false,
+        "mandatory": false,
+        "default": []
+      },
+      "menu": {
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "previousMenu": {
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "space": {
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "logs": {
+        "type": ["Log"],
+        "readOnly": false,
+        "mandatory": false,
+        "default": []
+      },
+      "navigation": {
+        "type": "navigation",
+        "readOnly": false,
+        "mandatory": false,
+        "default": {
+          "menu": [],
+          "spaces": []
+        }
+      }
+    }
+  },
+  "behaviors": {},
+  "types": {
+    "navigation": {
+      "_id": "n1bb7e1a8a713f75",
+      "name": "navigation",
+      "type": "object",
+      "schema": {
+        "menu": {
+          "type": "array",
+          "mandatory": false,
+          "default": []
+        },
+        "spaces": {
+          "type": "array",
+          "mandatory": false,
+          "default": []
+        }
+      }
+    }
+  },
+  "components": {
+    "State": {
+      "state": {
+        "_id": "state",
+        "component": "",
+        "lastPage": "index.html",
+        "logs": [],
+        "menu": "",
+        "messages": [],
+        "navigation": {
+          "menu": [],
+          "spaces": []
+        },
+        "previousMenu": "",
+        "space": "",
+        "type": "designer"
+      }
+    }
+  },
+  "_id": "z1c0ca1d5b31d495"
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="a low-code development platform for creating systems" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link rel="icon" href="img/favicon.ico" />
+  <title>system</title>
+  <!-- bootstrap -->
+  <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- editor styles -->
+  <link href="styles/editor.css" rel="stylesheet" />
+  <!-- editor system -->
+  <link href="systems/editor-system.json" type="application/json" rel="system" />
+</head>
+
+<body>
+  <!-- menubar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- menu header -->
+      <div id="designer-menubar-header" class="navbar-header"></div>
+      <div>
+        <!-- menu items -->
+        <ul id="designer-menubar-items" class="nav navbar-nav"></ul>
+        <!-- menu actions -->
+        <ul id="designer-menubar-actions" class="nav navbar-nav navbar-right hidden-xs"></ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- toolbar -->
+        <div class="col-sm-3 col-md-2 sidebar">
+          <!-- toolbar items -->
+          <ul id="designer-toolbar-items" class="nav nav-sidebar"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- dialog -->
+    <div id="designer-dialog"></div>
+    <!-- message -->
+    <div id="designer-message"></div>
+    <!-- editor -->
+    <div id="designer-editor"></div>
+  </div>
+  <!-- ace -->
+  <script type="text/javascript" charset="utf-8" src="lib/ace/ace.js"></script>
+  <!-- lib -->
+  <script src="lib/editor/vendor.js"></script>
+</body>
+
+</html>

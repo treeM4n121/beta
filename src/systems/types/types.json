@@ -1,0 +1,42 @@
+{
+  "name": "types",
+  "master": false,
+  "version": "1.0.0",
+  "description": "",
+  "schemas": {},
+  "models": {},
+  "behaviors": {},
+  "types": {
+    "dialogtype": {
+      "_id": "i1947115bed161d4",
+      "name": "dialogtype",
+      "type": "string",
+      "value": [
+        "sync",
+        "system",
+        "type",
+        "schema",
+        "model",
+        "behavior",
+        "component"
+      ]
+    },
+    "editorType": {
+      "_id": "o1d8851841b1c785",
+      "name": "editorType",
+      "type": "string",
+      "value": [
+        "designer",
+        "system",
+        "type",
+        "schema",
+        "model",
+        "behavior",
+        "component",
+        "diagram"
+      ]
+    }
+  },
+  "components": {},
+  "_id": "w1489d1717f18a87"
+}

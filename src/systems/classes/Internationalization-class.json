@@ -1,0 +1,135 @@
+{
+  "name": "Internationalization-class",
+  "master": false,
+  "version": "1.0.0",
+  "description": "Intertionalization",
+  "schemas": {
+    "a77b5281-cd56-477a-8201-c2ffdfe14317": {
+      "_id": "a77b5281-cd56-477a-8201-c2ffdfe14317",
+      "_name": "Strings",
+      "_inherit": ["_Component"],
+      "help_systems": "property",
+      "help_schemas": "property",
+      "help_models": "property",
+      "help_types": "property",
+      "help_behaviors": "property",
+      "help_components": "property",
+      "help_logs": "property"
+    },
+    "c452eff3-f0f1-4dd5-ad8d-b5a3ec521352": {
+      "_id": "c452eff3-f0f1-4dd5-ad8d-b5a3ec521352",
+      "_name": "Internationalization",
+      "_inherit": ["_Component"],
+      "get": "method",
+      "locale": "property"
+    }
+  },
+  "models": {
+    "eabc29ab-77ba-4eee-ad98-68dac6797ee8": {
+      "_id": "eabc29ab-77ba-4eee-ad98-68dac6797ee8",
+      "_name": "Strings",
+      "_description": "",
+      "help_systems": {
+        "description": "",
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "help_schemas": {
+        "description": "",
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "help_models": {
+        "description": "",
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "help_types": {
+        "description": "",
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "help_behaviors": {
+        "description": "",
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "help_components": {
+        "description": "",
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      },
+      "help_logs": {
+        "description": "",
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": ""
+      }
+    },
+    "ba12d3ed-d8cc-4809-9821-9a1351268fc5": {
+      "_id": "ba12d3ed-d8cc-4809-9821-9a1351268fc5",
+      "_name": "Internationalization",
+      "_description": "",
+      "get": {
+        "description": "",
+        "params": [
+          {
+            "description": "",
+            "name": "key",
+            "type": "string",
+            "mandatory": true,
+            "default": ""
+          }
+        ],
+        "result": "string"
+      },
+      "locale": {
+        "description": "",
+        "type": "string",
+        "readOnly": false,
+        "mandatory": false,
+        "default": "en-US"
+      }
+    }
+  },
+  "behaviors": {
+    "f71c2810-ffb7-4f19-a94b-2e08ec78d256": {
+      "_id": "f71c2810-ffb7-4f19-a94b-2e08ec78d256",
+      "component": "Internationalization",
+      "state": "get",
+      "action": "function get(key) { \n  let strings = this.require(this.locale());\n  if (!strings) {\n     strings = this.require('en-US');\n  }\n  return strings[key]();\n}",
+      "useCoreAPI": false,
+      "core": false
+    }
+  },
+  "types": {},
+  "components": {
+    "Internationalization": { "i18n": { "_id": "i18n", "locale": "en-US" } },
+    "Strings": {
+      "en-US": {
+        "_id": "en-US",
+        "help_systems": "An application is a system. Once you have created one, your next step is to create a schema.",
+        "help_schemas": "A schema is the definition of your model. Models are generated based on the schema definition.",
+        "help_models": "A model is an UML representation of your classes. It is generated from a schema.",
+        "help_types": "A type is used in your model to define an enumeration or a structure.",
+        "help_behaviors": "A behavior is the action to do when a method or an event is called.",
+        "help_components": "Components are your classes instances. Their states are saved in a store, a JSON object.",
+        "help_logs": "You will find here the logs of the running system.<br/><br/>Example of code to send a log:<br/><br/><i>this<br/>.require('logger')<br/>.info('hello world');</i>"
+      }
+    }
+  },
+  "_id": "ca2b16d9-9354-45b8-b44e-4ea273b838ad"
+}

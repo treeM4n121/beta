@@ -1,0 +1,8 @@
+{
+  "build": [
+    "dist"
+  ],
+  "systems": [
+    "dist/systems"
+  ]
+}

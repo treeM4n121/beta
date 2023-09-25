@@ -1,0 +1,46 @@
+{
+  "web": {
+    "files": [
+      "src/systems/*/*.json",
+      "src/merges/web/*.html",
+      "src/merges/web/app/index.html",
+      "src/www/styles/*.css",
+      "addons/*.json",
+      "extensions/*.json"
+    ],
+    "tasks": [
+      "copy:web-folder",
+      "copy:web-files",
+      "json_merge:web-systems",
+      "copy:web-livereload"
+    ],
+    "options": {
+      "spawn": false,
+      "livereload": true
+    }
+  },
+  "cordova": {
+    "files": [
+      "src/systems/*/*.json",
+      "src/merges/cordova/cordova.js",
+      "src/merges/cordova/*.html",
+      "src/merges/cordova/app/index.html",
+      "src/merges/cordova/scripts/mobile.js",
+      "src/merges/cordova/styles/mobile.css",
+      "src/www/styles/*.css",
+      "addons/*.json",
+      "extensions/*.json"
+    ],
+    "tasks": [
+      "copy:web-folder",
+      "copy:cordova-files",
+      "json_merge:cordova-systems",
+      "concat:app",
+      "copy:web-livereload"
+    ],
+    "options": {
+      "spawn": false,
+      "livereload": true
+    }
+  }
+}
